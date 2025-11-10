@@ -28,3 +28,128 @@ public class Main
 }
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+public class AllPatterns {
+
+    public static void main(String[] args) {
+
+        // 🔹 Call only the pattern you want to run:
+        // squarePattern();
+        // rightHalfPyramid();
+        // reverseRightHalfPyramid();
+        // numberIncreasingPyramid();
+        // numberIncreasingReversePyramid();
+        // rightPascalsTriangle();
+        // kPattern();
+        // zeroOneTriangle();
+        // numberChangingPyramid();
+    }
+
+    static void squarePattern() {
+        System.out.println("Square Pattern:");
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 5; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void rightHalfPyramid() {
+        System.out.println("Right Half Pyramid:");
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void reverseRightHalfPyramid() {
+        System.out.println("Reverse Right Half Pyramid:");
+        for (int i = 1; i <= 5; i++) {
+            for (int j = i; j <= 5; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void numberIncreasingPyramid() {
+        System.out.println("Number Increasing Pyramid:");
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
+    static void numberIncreasingReversePyramid() {
+        System.out.println("Number Increasing Reverse Pyramid:");
+        for (int i = 1; i <= 5; i++) {
+            for (int j = i; j <= 5; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
+    static void rightPascalsTriangle() {
+        System.out.println("Right Pascal’s Triangle:");
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = 1; i <= 4; i++) {
+            for (int j = i; j <= 4; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void kPattern() {
+        System.out.println("K Pattern:");
+        for (int i = 1; i <= 5; i++) {
+            for (int j = i; j <= 5; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void zeroOneTriangle() {
+        System.out.println("Zero-One Triangle:");
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                if ((i + j) % 2 == 0) {
+                    System.out.print("1 ");
+                } else {
+                    System.out.print("0 ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    static void numberChangingPyramid() {
+        System.out.println("Number Changing Pyramid:");
+        int num = 1;
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(num + " ");
+                num++;
+            }
+            System.out.println();
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
